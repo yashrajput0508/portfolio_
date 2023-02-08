@@ -1,0 +1,843 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <base href="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>@charset "UTF-8";:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-body-color-rgb:33,37,41;--bs-body-bg-rgb:255,255,255;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-bg:#fff;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, .175);--bs-border-radius:.375rem;--bs-border-radius-sm:.25rem;--bs-border-radius-lg:.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-2xl:2rem;--bs-border-radius-pill:50rem;--bs-link-color:#0d6efd;--bs-link-hover-color:#0a58ca;--bs-code-color:#d63384;--bs-highlight-bg:#fff3cd}*,:after,:before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}.h2,.h4,.h5,h1,h2,h3{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}.h2,h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){.h2,h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}.h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){.h4{font-size:1.5rem}}.h5{font-size:1.25rem}ul{padding-left:2rem}ul{margin-top:0;margin-bottom:1rem}.small{font-size:.875em}sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}a{color:var(--bs-link-color);text-decoration:underline}a:hover{color:var(--bs-link-hover-color)}img,svg{vertical-align:middle}button:focus:not(:focus-visible){outline:0}button,input,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}[type=button],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}textarea{resize:vertical}.container,.container-fluid{--bs-gutter-x:1.5rem;--bs-gutter-y:0;width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}@media (min-width:1400px){.container{max-width:1320px}}.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x))}.row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-top:var(--bs-gutter-y)}.col-6{flex:0 0 auto;width:50%}@media (min-width:576px){.col-sm{flex:1 0 0%}.col-sm-6{flex:0 0 auto;width:50%}.col-sm-12{flex:0 0 auto;width:100%}}@media (min-width:768px){.col-md{flex:1 0 0%}.col-md-3{flex:0 0 auto;width:25%}.col-md-4{flex:0 0 auto;width:33.33333333%}.col-md-5{flex:0 0 auto;width:41.66666667%}.col-md-6{flex:0 0 auto;width:50%}.col-md-7{flex:0 0 auto;width:58.33333333%}.col-md-9{flex:0 0 auto;width:75%}.col-md-12{flex:0 0 auto;width:100%}}@media (min-width:992px){.col-lg-3{flex:0 0 auto;width:25%}.col-lg-4{flex:0 0 auto;width:33.33333333%}.col-lg-8{flex:0 0 auto;width:66.66666667%}}.form-control{display:block;width:100%;padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;-webkit-appearance:none;appearance:none;border-radius:.375rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}@media (prefers-reduced-motion:reduce){.form-control{transition:none}}.form-control:focus{color:#212529;background-color:#fff;border-color:#86b7fe;outline:0;box-shadow:0 0 0 .25rem #0d6efd40}.form-control::-webkit-date-and-time-value{height:1.5em}.form-control:disabled{background-color:#e9ecef;opacity:1}.form-control::file-selector-button{padding:.375rem .75rem;margin:-.375rem -.75rem;margin-inline-end:.75rem;color:#212529;background-color:#e9ecef;pointer-events:none;border-color:inherit;border-style:solid;border-width:0;border-inline-end-width:1px;border-radius:0;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}@media (prefers-reduced-motion:reduce){.form-control::file-selector-button{transition:none}}.form-control:hover:not(:disabled):not([readonly])::file-selector-button{background-color:#dde0e3}textarea.form-control{min-height:calc(1.5em + .75rem + 2px)}.btn{--bs-btn-padding-x:.75rem;--bs-btn-padding-y:.375rem;--bs-btn-font-family: ;--bs-btn-font-size:1rem;--bs-btn-font-weight:400;--bs-btn-line-height:1.5;--bs-btn-color:#212529;--bs-btn-bg:transparent;--bs-btn-border-width:1px;--bs-btn-border-color:transparent;--bs-btn-border-radius:.375rem;--bs-btn-hover-border-color:transparent;--bs-btn-box-shadow:inset 0 1px 0 rgba(255, 255, 255, .15),0 1px 1px rgba(0, 0, 0, .075);--bs-btn-disabled-opacity:.65;--bs-btn-focus-box-shadow:0 0 0 .25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);display:inline-block;padding:var(--bs-btn-padding-y) var(--bs-btn-padding-x);font-family:var(--bs-btn-font-family);font-size:var(--bs-btn-font-size);font-weight:var(--bs-btn-font-weight);line-height:var(--bs-btn-line-height);color:var(--bs-btn-color);text-align:center;text-decoration:none;vertical-align:middle;cursor:pointer;-webkit-user-select:none;user-select:none;border:var(--bs-btn-border-width) solid var(--bs-btn-border-color);border-radius:var(--bs-btn-border-radius);background-color:var(--bs-btn-bg);transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}@media (prefers-reduced-motion:reduce){.btn{transition:none}}.btn:hover{color:var(--bs-btn-hover-color);background-color:var(--bs-btn-hover-bg);border-color:var(--bs-btn-hover-border-color)}.btn:focus-visible{color:var(--bs-btn-hover-color);background-color:var(--bs-btn-hover-bg);border-color:var(--bs-btn-hover-border-color);outline:0;box-shadow:var(--bs-btn-focus-box-shadow)}.btn:first-child:active{color:var(--bs-btn-active-color);background-color:var(--bs-btn-active-bg);border-color:var(--bs-btn-active-border-color)}.btn:first-child:active:focus-visible{box-shadow:var(--bs-btn-focus-box-shadow)}.btn:disabled{color:var(--bs-btn-disabled-color);pointer-events:none;background-color:var(--bs-btn-disabled-bg);border-color:var(--bs-btn-disabled-border-color);opacity:var(--bs-btn-disabled-opacity)}.btn-primary{--bs-btn-color:#fff;--bs-btn-bg:#0d6efd;--bs-btn-border-color:#0d6efd;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#0b5ed7;--bs-btn-hover-border-color:#0a58ca;--bs-btn-focus-shadow-rgb:49,132,253;--bs-btn-active-color:#fff;--bs-btn-active-bg:#0a58ca;--bs-btn-active-border-color:#0a53be;--bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, .125);--bs-btn-disabled-color:#fff;--bs-btn-disabled-bg:#0d6efd;--bs-btn-disabled-border-color:#0d6efd}.nav{--bs-nav-link-padding-x:1rem;--bs-nav-link-padding-y:.5rem;--bs-nav-link-font-weight: ;--bs-nav-link-color:var(--bs-link-color);--bs-nav-link-hover-color:var(--bs-link-hover-color);--bs-nav-link-disabled-color:#6c757d;display:flex;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.nav-link{display:block;padding:var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);font-size:var(--bs-nav-link-font-size);font-weight:var(--bs-nav-link-font-weight);color:var(--bs-nav-link-color);text-decoration:none;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out}@media (prefers-reduced-motion:reduce){.nav-link{transition:none}}.nav-link:focus,.nav-link:hover{color:var(--bs-nav-link-hover-color)}.navbar{--bs-navbar-padding-x:0;--bs-navbar-padding-y:.5rem;--bs-navbar-color:rgba(0, 0, 0, .55);--bs-navbar-hover-color:rgba(0, 0, 0, .7);--bs-navbar-disabled-color:rgba(0, 0, 0, .3);--bs-navbar-active-color:rgba(0, 0, 0, .9);--bs-navbar-brand-padding-y:.3125rem;--bs-navbar-brand-margin-end:1rem;--bs-navbar-brand-font-size:1.25rem;--bs-navbar-brand-color:rgba(0, 0, 0, .9);--bs-navbar-brand-hover-color:rgba(0, 0, 0, .9);--bs-navbar-nav-link-padding-x:.5rem;--bs-navbar-toggler-padding-y:.25rem;--bs-navbar-toggler-padding-x:.75rem;--bs-navbar-toggler-font-size:1.25rem;--bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");--bs-navbar-toggler-border-color:rgba(0, 0, 0, .1);--bs-navbar-toggler-border-radius:.375rem;--bs-navbar-toggler-focus-width:.25rem;--bs-navbar-toggler-transition:box-shadow .15s ease-in-out;position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:var(--bs-navbar-padding-y) var(--bs-navbar-padding-x)}.navbar>.container{display:flex;flex-wrap:inherit;align-items:center;justify-content:space-between}.navbar-brand{padding-top:var(--bs-navbar-brand-padding-y);padding-bottom:var(--bs-navbar-brand-padding-y);margin-right:var(--bs-navbar-brand-margin-end);font-size:var(--bs-navbar-brand-font-size);color:var(--bs-navbar-brand-color);text-decoration:none;white-space:nowrap}.navbar-brand:focus,.navbar-brand:hover{color:var(--bs-navbar-brand-hover-color)}.navbar-nav{--bs-nav-link-padding-x:0;--bs-nav-link-padding-y:.5rem;--bs-nav-link-font-weight: ;--bs-nav-link-color:var(--bs-navbar-color);--bs-nav-link-hover-color:var(--bs-navbar-hover-color);--bs-nav-link-disabled-color:var(--bs-navbar-disabled-color);display:flex;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-toggler{padding:var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);font-size:var(--bs-navbar-toggler-font-size);line-height:1;color:var(--bs-navbar-color);background-color:transparent;border:var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);border-radius:var(--bs-navbar-toggler-border-radius);transition:var(--bs-navbar-toggler-transition)}@media (prefers-reduced-motion:reduce){.navbar-toggler{transition:none}}.navbar-toggler:hover{text-decoration:none}.navbar-toggler:focus{text-decoration:none;outline:0;box-shadow:0 0 0 var(--bs-navbar-toggler-focus-width)}@media (min-width:992px){.navbar-expand-lg{flex-wrap:nowrap;justify-content:flex-start}.navbar-expand-lg .navbar-nav{flex-direction:row}.navbar-expand-lg .navbar-nav .nav-link{padding-right:var(--bs-navbar-nav-link-padding-x);padding-left:var(--bs-navbar-nav-link-padding-x)}.navbar-expand-lg .navbar-collapse{display:flex!important;flex-basis:auto}.navbar-expand-lg .navbar-toggler{display:none}}.navbar-dark{--bs-navbar-color:rgba(255, 255, 255, .55);--bs-navbar-hover-color:rgba(255, 255, 255, .75);--bs-navbar-disabled-color:rgba(255, 255, 255, .25);--bs-navbar-active-color:#fff;--bs-navbar-brand-color:#fff;--bs-navbar-brand-hover-color:#fff;--bs-navbar-toggler-border-color:rgba(255, 255, 255, .1);--bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.progress{--bs-progress-height:1rem;--bs-progress-font-size:.75rem;--bs-progress-bg:#e9ecef;--bs-progress-border-radius:.375rem;--bs-progress-box-shadow:inset 0 1px 2px rgba(0, 0, 0, .075);--bs-progress-bar-color:#fff;--bs-progress-bar-bg:#0d6efd;--bs-progress-bar-transition:width .6s ease;display:flex;height:var(--bs-progress-height);overflow:hidden;font-size:var(--bs-progress-font-size);background-color:var(--bs-progress-bg);border-radius:var(--bs-progress-border-radius)}.progress-bar{display:flex;flex-direction:column;justify-content:center;overflow:hidden;color:var(--bs-progress-bar-color);text-align:center;white-space:nowrap;background-color:var(--bs-progress-bar-bg);transition:var(--bs-progress-bar-transition)}@media (prefers-reduced-motion:reduce){.progress-bar{transition:none}}.border-primary{--bs-border-opacity:1;border-color:rgba(var(--bs-primary-rgb),var(--bs-border-opacity))!important}.mx-auto{margin-right:auto!important;margin-left:auto!important}.mt-3{margin-top:1rem!important}.mt-4{margin-top:1.5rem!important}.mt-5{margin-top:3rem!important}.mb-0{margin-bottom:0!important}.mb-3{margin-bottom:1rem!important}.mb-4{margin-bottom:1.5rem!important}.mb-5{margin-bottom:3rem!important}.px-2{padding-right:.5rem!important;padding-left:.5rem!important}.px-3{padding-right:1rem!important;padding-left:1rem!important}.px-5{padding-right:3rem!important;padding-left:3rem!important}.py-3{padding-top:1rem!important;padding-bottom:1rem!important}.py-5{padding-top:3rem!important;padding-bottom:3rem!important}.pt-4{padding-top:1.5rem!important}.pb-3{padding-bottom:1rem!important}.pb-5{padding-bottom:3rem!important}.bg-light{--bs-bg-opacity:1;background-color:rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important}.bg-white{--bs-bg-opacity:1;background-color:rgba(var(--bs-white-rgb),var(--bs-bg-opacity))!important}.rounded{border-radius:var(--bs-border-radius)!important}@media (min-width:768px){.d-md-flex{display:flex!important}.order-md-last{order:6!important}.mt-md-3{margin-top:1rem!important}.p-md-5{padding:3rem!important}.px-md-0{padding-right:0!important;padding-left:0!important}.px-md-5{padding-right:3rem!important;padding-left:3rem!important}.pt-md-0{padding-top:0!important}}@font-face{font-family:Icons;src:url(open-iconic.178770d6dc3ae2e7.eot);src:url(open-iconic.178770d6dc3ae2e7.eot?#iconic-sm) format("embedded-opentype"),url(open-iconic.3205870011f84472.woff) format("woff"),url(open-iconic.05f3a17709ceaa81.ttf) format("truetype"),url(open-iconic.a0236a1fdc9ab58d.otf) format("opentype"),url(open-iconic.609a03013cfb1ef4.svg#iconic-sm) format("svg");font-weight:400;font-style:normal}.oi{position:relative;top:1px;display:inline-block;speak:none;font-family:Icons;font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.oi:empty:before{width:1em;text-align:center;box-sizing:content-box}.oi-menu:before{content:"\e09b"}@charset "UTF-8";button::-moz-focus-inner{padding:0;border:0}@font-face{font-family:Ionicons;src:url(ionicons.cf042a24a79f8dd2.eot?v=4.0.0-19);src:url(ionicons.cf042a24a79f8dd2.eot?v=4.0.0-19#iefix) format("embedded-opentype"),url(ionicons.4bede07479dc164d.woff2?v=4.0.0-19) format("woff2"),url(ionicons.db56f76e5d8a4d16.woff?v=4.0.0-19) format("woff"),url(ionicons.6e9d6da7a179fd12.ttf?v=4.0.0-19) format("truetype"),url(ionicons.04f4424fb02cc79b.svg?v=4.0.0-19#Ionicons) format("svg");font-weight:400;font-style:normal}.ion-ios-arrow-round-down:before{display:inline-block;font-family:Ionicons;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;text-rendering:auto;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.ion-ios-arrow-round-down:before{content:"\f118"}@font-face{font-family:Flaticon;src:url(Flaticon.fc35495ea645c9de.eot);src:url(Flaticon.fc35495ea645c9de.eot?#iefix) format("embedded-opentype"),url(Flaticon.774dba07c488a9a3.woff) format("woff"),url(Flaticon.0053f6e3bfe304fa.ttf) format("truetype"),url(Flaticon.31fdc38d054fc5a1.svg#Flaticon) format("svg");font-weight:400;font-style:normal}@media screen and (-webkit-min-device-pixel-ratio:0){@font-face{font-family:Flaticon;src:url(Flaticon.31fdc38d054fc5a1.svg#Flaticon) format("svg")}}[class^=flaticon-]:before,[class^=flaticon-]:after{font-family:Flaticon;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.flaticon-ideas:before{content:"\f100"}@font-face{font-family:icomoon;src:url(icomoon.9ee4816767157ada.eot?6tt51o);src:url(icomoon.9ee4816767157ada.eot?6tt51o#iefix) format("embedded-opentype"),url(icomoon.01e1f342f9c6c548.ttf?6tt51o) format("truetype"),url(icomoon.98d562770764a903.woff?6tt51o) format("woff"),url(icomoon.9fbb96366c5768d9.svg?6tt51o#icomoon) format("svg");font-weight:400;font-style:normal}[class^=icon-],[class*=" icon-"]{font-family:icomoon!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-map-marker:before{content:"\f041"}.icon-phone:before{content:"\f095"}.icon-github:before{content:"\f09b"}.icon-envelope:before{content:"\f0e0"}.icon-linkedin:before{content:"\f0e1"}.icon-instagram:before{content:"\f16d"}.icon-long-arrow-right:before{content:"\f178"}.icon-paper-plane:before{content:"\f1d8"}.icon-map-signs:before{content:"\f277"}.icon-phone2:before{content:"\e0cd"}:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-family-monospace:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}*,*:before,*:after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}footer,nav,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}h1,h2,h3{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}ul{margin-top:0;margin-bottom:1rem}b,strong{font-weight:bolder}sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}sup{top:-.5em}a{color:#007bff;text-decoration:none;background-color:transparent}a:hover{color:#0056b3;text-decoration:underline}img{vertical-align:middle;border-style:none}svg{overflow:hidden;vertical-align:middle}button{border-radius:0}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}input,button,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button{text-transform:none}button,[type=button],[type=submit]{-webkit-appearance:button}button:not(:disabled),[type=button]:not(:disabled),[type=submit]:not(:disabled){cursor:pointer}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner{padding:0;border-style:none}textarea{overflow:auto;resize:vertical}h1,h2,h3,.h2,.h4,.h5{margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:2.5rem}h2,.h2{font-size:2rem}h3{font-size:1.75rem}.h4{font-size:1.5rem}.h5{font-size:1.25rem}.lead{font-size:1.25rem;font-weight:300}.small{font-size:80%;font-weight:400}.list-unstyled{padding-left:0;list-style:none}.img-fluid{max-width:100%;height:auto}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width: 576px){.container{max-width:540px}}@media (min-width: 768px){.container{max-width:720px}}@media (min-width: 992px){.container{max-width:960px}}@media (min-width: 1200px){.container{max-width:1140px}}.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.no-gutters{margin-right:0;margin-left:0}.no-gutters>[class*=col-]{padding-right:0;padding-left:0}.col-6,.col-sm-6,.col-sm-12,.col-sm,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-9,.col-md-12,.col-md,.col-lg-3,.col-lg-4,.col-lg-8{position:relative;width:100%;padding-right:15px;padding-left:15px}.col-6{flex:0 0 50%;max-width:50%}@media (min-width: 576px){.col-sm{flex-basis:0;flex-grow:1;max-width:100%}.col-sm-6{flex:0 0 50%;max-width:50%}.col-sm-12{flex:0 0 100%;max-width:100%}}@media (min-width: 768px){.col-md{flex-basis:0;flex-grow:1;max-width:100%}.col-md-3{flex:0 0 25%;max-width:25%}.col-md-4{flex:0 0 33.33333%;max-width:33.33333%}.col-md-5{flex:0 0 41.66667%;max-width:41.66667%}.col-md-6{flex:0 0 50%;max-width:50%}.col-md-7{flex:0 0 58.33333%;max-width:58.33333%}.col-md-9{flex:0 0 75%;max-width:75%}.col-md-12{flex:0 0 100%;max-width:100%}.order-md-last{order:13}}@media (min-width: 992px){.col-lg-3{flex:0 0 25%;max-width:25%}.col-lg-4{flex:0 0 33.33333%;max-width:33.33333%}.col-lg-8{flex:0 0 66.66667%;max-width:66.66667%}}.form-control{display:block;width:100%;height:calc(1.5em + .75rem + 2px);padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}@media (prefers-reduced-motion: reduce){.form-control{transition:none}}.form-control::-ms-expand{background-color:transparent;border:0}.form-control:focus{color:#495057;background-color:#fff;border-color:#80bdff;outline:0;box-shadow:0 0 0 .2rem #007bff40}.form-control::placeholder{color:#6c757d;opacity:1}.form-control:disabled{background-color:#e9ecef;opacity:1}textarea.form-control{height:auto}.form-group{margin-bottom:1rem}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;-webkit-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}@media (prefers-reduced-motion: reduce){.btn{transition:none}}.btn:hover{color:#212529;text-decoration:none}.btn:focus{outline:0;box-shadow:0 0 0 .2rem #007bff40}.btn:disabled{opacity:.65}.btn-primary{color:#fff;background-color:#007bff;border-color:#007bff}.btn-primary:hover{color:#fff;background-color:#0069d9;border-color:#0062cc}.btn-primary:focus{box-shadow:0 0 0 .2rem #268fff80}.btn-primary:disabled{color:#fff;background-color:#007bff;border-color:#007bff}.btn-primary:not(:disabled):not(.disabled):active{color:#fff;background-color:#0062cc;border-color:#005cbf}.btn-primary:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem #268fff80}.collapse:not(.show){display:none}.nav{display:flex;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.nav-link{display:block;padding:.5rem 1rem}.nav-link:hover,.nav-link:focus{text-decoration:none}.navbar{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:.5rem 1rem}.navbar>.container{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between}.navbar-brand{display:inline-block;padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;line-height:inherit;white-space:nowrap}.navbar-brand:hover,.navbar-brand:focus{text-decoration:none}.navbar-nav{display:flex;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-collapse{flex-basis:100%;flex-grow:1;align-items:center}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:.25rem}.navbar-toggler:hover,.navbar-toggler:focus{text-decoration:none}@media (max-width: 991.98px){.navbar-expand-lg>.container{padding-right:0;padding-left:0}}@media (min-width: 992px){.navbar-expand-lg{flex-flow:row nowrap;justify-content:flex-start}.navbar-expand-lg .navbar-nav{flex-direction:row}.navbar-expand-lg .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-lg>.container{flex-wrap:nowrap}.navbar-expand-lg .navbar-collapse{display:flex!important;flex-basis:auto}.navbar-expand-lg .navbar-toggler{display:none}}.navbar-dark .navbar-brand{color:#fff}.navbar-dark .navbar-brand:hover,.navbar-dark .navbar-brand:focus{color:#fff}.navbar-dark .navbar-nav .nav-link{color:#ffffff80}.navbar-dark .navbar-nav .nav-link:hover,.navbar-dark .navbar-nav .nav-link:focus{color:#ffffffbf}.navbar-dark .navbar-toggler{color:#ffffff80;border-color:#ffffff1a}.progress{display:flex;height:1rem;overflow:hidden;font-size:.75rem;background-color:#e9ecef;border-radius:.25rem}.progress-bar{display:flex;flex-direction:column;justify-content:center;color:#fff;text-align:center;white-space:nowrap;background-color:#007bff;transition:width .6s ease}@media (prefers-reduced-motion: reduce){.progress-bar{transition:none}}.bg-light{background-color:#f8f9fa!important}.bg-white{background-color:#fff!important}.border-right{border-right:1px solid #dee2e6!important}.border-primary{border-color:#007bff!important}.rounded{border-radius:.25rem!important}.rounded-lg{border-radius:.3rem!important}.rounded-circle{border-radius:50%!important}.d-block{display:block!important}.d-flex{display:flex!important}@media (min-width: 768px){.d-md-flex{display:flex!important}}.justify-content-start{justify-content:flex-start!important}.justify-content-end{justify-content:flex-end!important}.justify-content-center{justify-content:center!important}.align-items-center{align-items:center!important}.align-self-stretch{align-self:stretch!important}.float-right{float:right!important}@media (min-width: 768px){.float-md-left{float:left!important}}.shadow{box-shadow:0 .5rem 1rem #00000026!important}.w-100{width:100%!important}.h-100{height:100%!important}.mb-0{margin-bottom:0!important}.mr-2{margin-right:.5rem!important}.mt-3{margin-top:1rem!important}.mb-3{margin-bottom:1rem!important}.mt-4{margin-top:1.5rem!important}.mb-4{margin-bottom:1.5rem!important}.mt-5{margin-top:3rem!important}.mb-5{margin-bottom:3rem!important}.px-2{padding-right:.5rem!important}.px-2{padding-left:.5rem!important}.py-3{padding-top:1rem!important}.px-3{padding-right:1rem!important}.pb-3,.py-3{padding-bottom:1rem!important}.pl-3,.px-3{padding-left:1rem!important}.p-4{padding:1.5rem!important}.pt-4{padding-top:1.5rem!important}.py-5{padding-top:3rem!important}.px-5{padding-right:3rem!important}.pb-5,.py-5{padding-bottom:3rem!important}.px-5{padding-left:3rem!important}.mx-auto{margin-right:auto!important}.ml-auto,.mx-auto{margin-left:auto!important}@media (min-width: 768px){.mt-md-3{margin-top:1rem!important}.ml-md-4{margin-left:1.5rem!important}.pt-md-0{padding-top:0!important}.px-md-0{padding-right:0!important}.px-md-0{padding-left:0!important}.p-md-5{padding:3rem!important}.px-md-5{padding-right:3rem!important}.px-md-5{padding-left:3rem!important}}.text-center{text-align:center!important}.font-weight-bold{font-weight:700!important}@media print{*,*:before,*:after{text-shadow:none!important;box-shadow:none!important}a:not(.btn){text-decoration:underline}img{page-break-inside:avoid}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}@page{size:a3}body,.container{min-width:992px!important}.navbar{display:none}}body{font-family:Poppins,Arial,sans-serif;background:#fff;font-size:16px;line-height:1.8;font-weight:400;color:#999}a{transition:.3s all ease;color:#3e64ff}a:hover,a:focus{text-decoration:none;color:#3e64ff;outline:none!important}h1,h2,h3,.h2,.h4,.h5{line-height:1.5;color:#000;font-weight:400}.ftco-navbar-light{background:transparent!important;position:absolute;top:0;left:0;right:0;z-index:3}@media (max-width: 991.98px){.ftco-navbar-light{background:#000000!important;position:relative;top:0;padding:0 15px}}.ftco-navbar-light .container{width:1110px;margin:0 auto;padding:0}.ftco-navbar-light .navbar-brand{color:#000;padding-top:.7rem;padding-bottom:.7rem}.ftco-navbar-light .navbar-brand:hover,.ftco-navbar-light .navbar-brand:focus{color:#000!important}@media (max-width: 991.98px){.ftco-navbar-light .navbar-brand{color:#fff}}@media (max-width: 991.98px){.ftco-navbar-light .navbar-nav{padding-bottom:20px;margin-right:0}}.ftco-navbar-light .navbar-nav>.nav-item>.nav-link{font-size:16px;padding-top:.7rem;padding-bottom:.7rem;padding-left:20px;padding-right:20px;color:#000;font-weight:400;opacity:1!important}.ftco-navbar-light .navbar-nav>.nav-item>.nav-link span{position:relative;display:block;padding-bottom:2px}@media (max-width: 1199.98px){.ftco-navbar-light .navbar-nav>.nav-item>.nav-link span{display:inline-block}}.ftco-navbar-light .navbar-nav>.nav-item>.nav-link span:before{content:"";position:absolute;width:100%;height:2px;bottom:0;left:0;background:#3e64ff;visibility:visible;transform:scaleX(0);transition:all .3s ease-in-out 0s}.ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover span:before{visibility:visible;transform:scaleX(1)}@media (max-width: 991.98px){.ftco-navbar-light .navbar-nav>.nav-item>.nav-link{padding-left:0;padding-right:0;padding-bottom:1rem;padding-top:0;color:#fff}}.ftco-navbar-light .navbar-toggler{border:none;color:#ffffff80!important;cursor:pointer;padding-right:0;text-transform:uppercase;font-size:16px;letter-spacing:.1em}.ftco-navbar-light .navbar-toggler:hover,.ftco-navbar-light .navbar-toggler:focus{text-decoration:none;color:#3e64ff;outline:none!important}.navbar-brand{font-weight:900;font-size:26px;position:relative;z-index:0}.navbar-brand:after{position:absolute;top:50%;left:-12px;width:40px;height:40px;content:"";background:#3e64ff;z-index:-1;transform:translateY(-50%);border-radius:50%}.navbar-brand span{color:#fff}.hero-wrap{width:100%;height:100%;position:inherit;background-size:cover;background-repeat:no-repeat}.hero-wrap .overlay{position:absolute;inset:0;content:"";opacity:.1;width:50%;background:#3e64ff}.hero-wrap .text{width:100%}.slider-text .subheading{text-transform:uppercase;font-size:16px;font-weight:800;color:#3e64ff;letter-spacing:4px}.slider-text h1{font-size:60px;font-weight:800}@media (max-width: 767.98px){.slider-text h1{font-size:40px}}.slider-text h2{font-weight:800}.slider-text h2 span{color:#3e64ff;text-decoration:underline}.mouse{position:absolute;left:0;right:0;bottom:120px;z-index:2}.mouse-icon{width:70px;height:70px;border:1px solid transparent;cursor:pointer;position:relative;text-align:center;margin:0 auto;display:block}.mouse-icon:after{position:absolute;inset:0;content:"";background:#edf0ff;z-index:-1;transform:rotate(45deg)}.mouse-wheel{height:70px;margin:2px auto 0;display:block;width:30px;background:transparent;border-radius:50%;animation:1.6s ease infinite wheel-up-down;color:#3e64ff;font-size:30px}@keyframes wheel-up-down{to{margin-top:25px;opacity:1}30%{opacity:1}0%{margin-top:-10px;opacity:0}}.bg-light{background:#f8f9fa!important}.btn{cursor:pointer;border-radius:40px;box-shadow:0 24px 36px -11px #00000017;font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:600}.btn:hover,.btn:active,.btn:focus{outline:none}.btn.btn-primary{background:#3e64ff;border:1px solid #3e64ff!important;color:#fff!important}.btn.btn-primary:hover{border:1px solid #3e64ff!important;background:#3e64ff!important;color:#000!important}.ftco-about ul.about-info{display:inline-block;padding:0;margin:0;width:100%}.ftco-about ul.about-info li{list-style:none;margin-bottom:10px}.ftco-about ul.about-info li span{width:calc(100% - 130px)}.ftco-about ul.about-info li span:first-child{font-weight:600;color:#000;width:130px}.ftco-about .counter-wrap .text p{font-size:20px}.ftco-about .counter-wrap .text p span{font-weight:400;color:#000}.ftco-about .counter-wrap .text p span.number{font-weight:600;color:#3e64ff}#navi{top:180px;position:sticky;margin:0}#navi ul{margin:0;padding:0}#navi li{font-weight:700;list-style:none;margin-bottom:10px}#navi li a{color:#000}.page{width:100%;margin-bottom:7em}.page.four{margin-bottom:0}.page .heading{font-weight:800;font-size:30px;margin-bottom:30px;color:#3e64ff}.resume-wrap{width:100%;margin-bottom:30px;border-bottom:1px solid rgba(0,0,0,.1);padding-bottom:10px}.resume-wrap .icon{width:50px;height:50px;background:#3e64ff;border-radius:50%}.resume-wrap .icon span{color:#fff;font-size:28px}.resume-wrap .text{width:calc(100% - 50px)}.resume-wrap .date{font-weight:700;font-size:16px;color:#0009;color:#3e64ff}.resume-wrap h2{font-size:24px;font-weight:700}.resume-wrap .position{font-size:18px;font-weight:700;color:#000}.ftco-partner{padding:4em 0!important}.ftco-partner .partner{display:block;padding:0 20px}@media (max-width: 991.98px){.ftco-partner .partner{padding:0 70px;margin-bottom:40px}}.services-1{margin-bottom:40px;padding:2em;background:rgba(255,255,255,.1);width:100%}.services-1 .icon{display:block;margin-bottom:30px}.services-1 .desc h3{line-height:1.3;font-size:13px;font-weight:500;letter-spacing:3px;text-transform:uppercase;position:relative;color:#000}.services-1 .desc h3:after{position:absolute;bottom:-15px;left:0;right:0;content:"";width:30px;height:1px;background:#3e64ff;margin:0 auto}.services-1 .desc p{color:#000000b3}.services-1:hover{background:#3e64ff}.services-1:hover h3{color:#000}.services-1:hover h3:after{background:#000000}.progress-wrap{width:100%;margin-bottom:30px}.progress-wrap h3{font-size:16px;margin-bottom:10px;font-weight:500}.progress{height:10px;box-shadow:none;background:#e6e6e6;overflow:visible}.progress-bar{background:#3e64ff;box-shadow:none;font-size:12px;line-height:1.2;color:#000;font-weight:600;position:relative;overflow:visible;border-radius:2px}.progress-bar:after{position:absolute;top:-2px;right:0;width:34px;height:34px;content:"";background:#3e64ff;border-radius:2px;opacity:0}.progress-bar span{position:absolute;top:-38px;right:0;font-size:16px;font-weight:500;color:#000}.progress-circle .progress{width:150px;height:150px;background:none;position:relative}.progress-circle .progress:after{content:"";width:100%;height:100%;border-radius:50%;border:6px solid #eee;position:absolute;top:0;left:0}.progress-circle .progress>span{width:50%;height:100%;overflow:hidden;position:absolute;top:0;z-index:1}.progress-circle .progress .progress-left{left:0}.progress-circle .progress .progress-bar{width:100%;height:100%;background:none;border-width:6px;border-style:solid;position:absolute;top:0}.progress-circle .progress .progress-left .progress-bar{left:100%;border-top-right-radius:80px;border-bottom-right-radius:80px;border-left:0;transform-origin:center left}.progress-circle .progress .progress-right{right:0}.progress-circle .progress .progress-right .progress-bar{left:-100%;border-top-left-radius:80px;border-bottom-left-radius:80px;border-right:0;transform-origin:center right}.progress-circle .progress .progress-value{position:absolute;top:0;left:0}.ftco-hireme{background:#3e64ff;z-index:0;position:relative}.ftco-hireme .overlay{position:absolute;inset:0;content:"";background:#3e64ff;opacity:.7}.ftco-hireme h2{color:#fff;font-size:40px;font-weight:900}.ftco-hireme h2 span{color:#a0f669}.ftco-hireme p{color:#ffffffe6}.project{width:100%;height:350px;margin-bottom:0;position:relative;z-index:0}.project .overlay{position:absolute;inset:0;content:"";opacity:0;background:#3e64ff;z-index:-1;transition:all .3s ease}@media (max-width: 767.98px){.project .overlay{opacity:.2}}.project .text{max-width:80%;z-index:1;opacity:0;transition:all .3s ease}.project .text h3{font-size:20px}.project .text h3 a{color:#fff}.project .text span{color:#fffc;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:600}@media (max-width: 767.98px){.project .text{opacity:1}.project .text span{color:#fffc}}.project:hover .overlay,.project:focus .overlay{opacity:.9}.project:hover .text,.project:focus .text{opacity:1}.form-control{height:52px!important;background:#fff!important;color:#000!important;font-size:18px;border-radius:5px;box-shadow:none!important}.form-control:focus,.form-control:active{border-color:#000}textarea.form-control{height:inherit!important}.ftco-animate{opacity:0;visibility:hidden}.ftco-section{padding:7em 0;position:relative}@media (max-width: 767.98px){.ftco-section{padding:6em 0}}.ftco-no-pt{padding-top:0!important}.ftco-no-pb{padding-bottom:0!important}.ftco-footer{font-size:16px;background:#000000;padding:7em 0;z-index:0}.ftco-footer .ftco-footer-widget h2{font-weight:400;color:#fff;margin-bottom:40px;font-size:22px;font-weight:600}.ftco-footer .ftco-footer-widget ul li{margin-bottom:10px}.ftco-footer .ftco-footer-widget ul li a,.ftco-footer .ftco-footer-widget ul li a span{color:#fff9}.ftco-footer p,.ftco-footer a{color:#ffffffb3}.ftco-footer a:hover{color:#fff}.ftco-footer .ftco-heading-2{font-size:17px;font-weight:400;color:#000}.ftco-footer-social li{list-style:none;margin:0 10px 0 0;display:inline-block}.ftco-footer-social li a{height:50px;width:50px;display:block;float:left;background:rgba(255,255,255,.1);border-radius:50%;position:relative}.ftco-footer-social li a span{position:absolute;font-size:26px;top:50%;left:50%;transform:translate(-50%,-50%)}.ftco-footer-social li a:hover{color:#fff}.heading-section{position:relative}.heading-section h1.big{position:absolute;top:0;left:0;font-size:7vw;color:#ffffff1a;z-index:-1;font-weight:900}.heading-section h1.big.big-2{right:0}.heading-section h2{font-size:50px;font-weight:700}@media (max-width: 767.98px){.heading-section h2{font-size:38px}}.img{background-size:cover;background-repeat:no-repeat;background-position:center center}#section-counter{position:relative;z-index:0}@media (max-width: 1199.98px){.ftco-counter{background-position:center center!important}}.ftco-counter .block-18{display:block;width:100%;text-align:center;padding:30px 20px}.ftco-counter .text strong.number{font-weight:700;font-size:30px;color:#3e64ff;display:block}.ftco-counter .text span{display:block;font-size:16px;color:#000c}@media (max-width: 767.98px){.ftco-counter .counter-wrap{margin-bottom:20px}}.block-20{overflow:hidden;background-size:cover;background-repeat:no-repeat;background-position:center center;position:relative;display:block;width:100%;height:300px}.blog-entry{position:relative}@media (min-width: 768px){.blog-entry{margin-bottom:30px}}@media (max-width: 767.98px){.blog-entry{margin-bottom:30px}}.blog-entry .text{width:100%;margin:0 auto}.blog-entry .text .heading{font-size:20px;margin-bottom:16px;font-weight:500}.blog-entry .text .heading a{color:#000}.blog-entry .text .heading a:hover,.blog-entry .text .heading a:focus,.blog-entry .text .heading a:active{color:#3e64ff}.blog-entry .meta{display:inline-block;margin-right:5px;margin-bottom:0;font-size:16px;font-weight:600}.blog-entry .meta span,.blog-entry .meta a,.blog-entry .meta a:hover{color:#3e64ff}.block-23 ul{padding:0}.block-23 ul li,.block-23 ul li>a{display:table;line-height:1.5;margin-bottom:15px}.block-23 ul li span{color:#ffffffb3}.block-23 ul li .icon,.block-23 ul li .text{display:table-cell;vertical-align:top}.block-23 ul li .icon{width:40px;font-size:18px;padding-top:2px;color:#fff}.contact-section .contact-info p a{color:#1a1a1a}.contact-section .box{width:100%;display:block;border-radius:4px}@media (max-width: 991.98px){.contact-section .box{margin-bottom:30px}}.contact-section .box .icon{width:100px;height:100px;background:#3e64ff;margin:0 auto 10px;border-radius:50%}.contact-section .box .icon span{color:#fff;font-size:30px}.contact-section .box h3{font-size:18px;font-weight:600}.contact-section .contact-info p a{color:#3e64ff}.contact-section .contact-form{width:100%}@media (max-width: 767.98px){.contact-section .contact-form .btn-primary{display:block;width:100%}}.block-9 .form-control{outline:none!important;box-shadow:none!important;font-size:15px}#ftco-loader{position:fixed;width:96px;height:96px;left:50%;top:50%;transform:translate(-50%,-50%);background-color:#ffffffe6;box-shadow:0 24px 64px #0000003d;border-radius:16px;opacity:0;visibility:hidden;transition:opacity .2s ease-out,visibility 0s linear .2s;z-index:1000}#ftco-loader.fullscreen{padding:0;left:0;top:0;width:100%;height:100%;transform:none;background-color:#fff;border-radius:0;box-shadow:none}#ftco-loader.show{transition:opacity .4s ease-out,visibility 0s linear 0s;visibility:visible;opacity:1}#ftco-loader .circular{animation:loader-rotate 2s linear infinite;position:absolute;left:calc(50% - 24px);top:calc(50% - 24px);display:block;transform:rotate(0)}#ftco-loader .path{stroke-dasharray:1,200;stroke-dashoffset:0;animation:loader-dash 1.5s ease-in-out infinite;stroke-linecap:round}@keyframes loader-rotate{to{transform:rotate(360deg)}}@keyframes loader-dash{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:89,200;stroke-dashoffset:-35px}to{stroke-dasharray:89,200;stroke-dashoffset:-136px}}.sect-pt4{padding-top:4rem}@media (min-width: 768px){.box-shadow-full{padding:3rem}}.box-shadow-full{padding:3rem 1.25rem;position:relative;background-color:#fff;margin-bottom:3rem;z-index:2;box-shadow:0 1px 1px #0000000f,0 2px 5px #0003}.skill-mf span{color:#4e4e4e}.title-box-2{margin-bottom:3rem}</style><link rel="stylesheet" href="styles.8c4eb63d4d3aed20.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.8c4eb63d4d3aed20.css"></noscript></head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href=""><span>Y</span>ash</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+          <li class="nav-item"><a href="#profiles-section" class="nav-link"><span>Profiles</span></a></li>
+          <li class="nav-item"><a href="#certificate-section" class="nav-link"><span>Certificate</span></a></li>
+          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Project</span></a></li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="hero-wrap js-fullheight">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+        <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+          <div class="text text-center">
+            <span class="subheading">Hey! I am</span>
+            <h1>Yash Rajput</h1>
+            <h2>I'm a
+              <span class="txt-rotate" data-period="2000" data-rotate="[ &quot;Software Engineer.&quot;, &quot;Full Stack Developer.&quot;, &quot;Competitive Programmer.&quot; ]"></span>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mouse">
+      <a href="#" class="mouse-icon">
+        <div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+      </a>
+    </div>
+  </section>
+
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container" id="about-section">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row justify-content-center">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="./assets/images/img.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-mf">
+                  <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb">
+                    <div class="container">
+                      <div class="row d-flex no-gutters">
+                        <div class="row justify-content-start pb-3">
+                          <div class="col-md-12 heading-section ftco-animate">
+                            <ul class="about-info mt-4 px-md-0 px-2">
+                              <li class="d-flex"><span>Name:</span> <span>Yash</span></li>
+                              <li class="d-flex"><span>Date of birth:</span> <span>August 05, 2001</span></li>
+                              <li class="d-flex"><span>Address:</span> <span>Ekta Nagar, Pilibhit</span></li>
+                              <li class="d-flex"><span>Zip code:</span> <span>262001</span></li>
+                              <li class="d-flex"><span>Email:</span> <span>yasharajput0508@gmail.com</span></li>
+                              <li class="d-flex"><span>Phone: </span> <span>+91-8941989294</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                          <div class="text">
+                            <p class="mb-4">
+                              <span class="number" data-number="20">0</span>
+                              <span>Project complete</span>
+                            </p>
+                            <p><a href="./assets/resume/Yash's Resume.pdf" download="Yash_Resume" class="btn btn-primary py-3 px-3">Download CV</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h2 class="title-left">
+                      About Me
+                    </h2>
+                  </div>
+                  <p class="lead">
+                    My name is Yash and I'm Associate Engineer at Nagarro. I passed my BTech from Rakshpal Bahadur College of Engineer and Technology with Honors.
+                  </p>
+                  <p class="lead">
+                    I also done my 3 months Internship from Incipient Technology Pvt. Ltd. I have a good knowledge of C, C++, and Java, Python. I have both an urge and a capacity to learn new technologies.
+                    I’m also good at data structures and algorithms.
+                  </p>
+                  <p class="lead">
+                    I also having a experience as Full Stack Developer, Data Science , Machine Learning etc; 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+
+  <section class="ftco-section ftco-partner">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm ftco-animate">
+          <a href="#" class="partner"><img src="./assets/images/partner-1.png" class="img-fluid" alt="Colorlib Template"></a>
+        </div>
+        <div class="col-sm ftco-animate">
+          <a href="#" class="partner"><img src="./assets/images/partner-2.png" class="img-fluid" alt="Colorlib Template"></a>
+        </div>
+        <div class="col-sm ftco-animate">
+          <a href="#" class="partner"><img src="./assets/images/partner-3.png" class="img-fluid" alt="Colorlib Template"></a>
+        </div>
+        <div class="col-sm ftco-animate">
+          <a href="#" class="partner"><img src="./assets/images/partner-4.png" class="img-fluid" alt="Colorlib Template"></a>
+        </div>
+        <div class="col-sm ftco-animate">
+          <a href="#" class="partner"><img src="./assets/images/partner-5.png" class="img-fluid" alt="Colorlib Template"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <nav id="navi">
+            <ul>
+              <li><a href="#page-1">Education</a></li>
+              <li><a href="#page-2">Experience</a></li>
+              <li><a href="#page-3">Skills</a></li>
+              <li><a href="#page-4">Awards</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-9">
+          <div id="page-1" class="page one">
+            <h2 class="heading">Education</h2>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-ideas"></span>
+              </div>
+              <div class="text pl-3">
+                <span class="date">2018-2022</span>
+                <h2>Bachelor of Techonology in Computer Science</h2>
+                <span class="position">Rakshpal Bahadur College of Engineering and Techonology</span>
+                <p><b>Percentage:-</b> 82%.</p>
+              </div>
+            </div>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-ideas"></span>
+              </div>
+              <div class="text pl-3">
+                <span class="date">2017-2018</span>
+                <h2>Intermediate</h2>
+                <span class="position">Adarsh Inter College</span>
+                <p><b>Percentage:-</b> 70%.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="page-2" class="page two">
+            <h2 class="heading">Experience</h2>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-ideas"></span>
+              </div>
+              <div class="text pl-3">
+                <span class="date">10/2022 - Present</span>
+                <h2>Associate Engineer</h2>
+                <span class="position">Nagarro</span>
+                <p>Skills :- Java, DSA, SQL, Html, CSS, Javascript, Maven, JDBC, Hibernate, Spirng, Jenkins, Angular etc.</p>
+              </div>
+            </div>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-ideas"></span>
+              </div>
+              <div class="text pl-3">
+                <span class="date">09/2021 - 12/2021</span>
+                <h2>Data Science Intern</h2>
+                <span class="position">Incipient Technology Pvt. Ltd.</span>
+                <p>Our Responsibility is to work on deep learning models and
+                  explore real world projects. We are working on data science , machine learning and deep
+                  learning projects which are capable to work in the systems.
+                  In this Internship I worked on some projects such as Spitting
+                  Detection , Material Count , Face Detection , Person Monitoring
+                  etc.
+                  I worked on advanced yolo models, Video Analytics, Computer Vision, Tensorflow, Pytorch .</p>
+                  <p>Skills: Python · Yolov5 · Cascading Style Sheets (CSS) · JavaScript · Machine Learning · Deep Learning · Artificial Intelligence (AI) · HTML · Bootstrap · Django · Data Structures</p>
+              </div>
+            </div>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-ideas"></span>
+              </div>
+              <div class="text pl-3">
+                <span class="date">08/2021 - 09/2021</span>
+                <h2>Python For AI/ML Intern</h2>
+                <span class="position">Elite Techno Groups</span>
+                <p>Our Responsibility to work on Artificial Intelligence , Machine Learning Projects. We worked on summer olympics analysis, Car Manufacturing
+                  Analysis , Breast Cancer detection projects etc.
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div id="page-3" class="page three">
+            <h2 class="heading">Skills</h2>
+            <div class="row progress-circle mb-5">
+              <div class="col-lg-4 mb-4">
+                <div class="bg-white rounded-lg shadow p-4">
+                  <h2 class="h5 font-weight-bold text-center mb-4">C++</h2>
+
+                  <!-- Progress bar 1 -->
+                  <div class="progress mx-auto" data-value="90">
+                    <span class="progress-left">
+                      <span class="progress-bar border-primary"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar border-primary"></span>
+                    </span>
+                    <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                      <div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
+                    </div>
+                  </div>
+                  <!-- END -->
+
+                  <!-- Demo info -->
+                  <div class="row text-center mt-4">
+                    <div class="col-6 border-right">
+                      <div class="h4 font-weight-bold mb-0">70%</div><span class="small text-gray">Last week</span>
+                    </div>
+                    <div class="col-6">
+                      <div class="h4 font-weight-bold mb-0">65%</div><span class="small text-gray">Last month</span>
+                    </div>
+                  </div>
+                  <!-- END -->
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="bg-white rounded-lg shadow p-4">
+                  <h2 class="h5 font-weight-bold text-center mb-4">Java</h2>
+
+                  <!-- Progress bar 1 -->
+                  <div class="progress mx-auto" data-value="80">
+                    <span class="progress-left">
+                      <span class="progress-bar border-primary"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar border-primary"></span>
+                    </span>
+                    <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                      <div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
+                    </div>
+                  </div>
+                  <!-- END -->
+
+                  <!-- Demo info -->
+                  <div class="row text-center mt-4">
+                    <div class="col-6 border-right">
+                      <div class="h4 font-weight-bold mb-0">70%</div><span class="small text-gray">Last week</span>
+                    </div>
+                    <div class="col-6">
+                      <div class="h4 font-weight-bold mb-0">78%</div><span class="small text-gray">Last month</span>
+                    </div>
+                  </div>
+                  <!-- END -->
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="bg-white rounded-lg shadow p-4">
+                  <h2 class="h5 font-weight-bold text-center mb-4">Python</h2>
+
+                  <!-- Progress bar 1 -->
+                  <div class="progress mx-auto" data-value="70">
+                    <span class="progress-left">
+                      <span class="progress-bar border-primary"></span>
+                    </span>
+                    <span class="progress-right">
+                      <span class="progress-bar border-primary"></span>
+                    </span>
+                    <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                      <div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
+                    </div>
+                  </div>
+                  <!-- END -->
+
+                  <!-- Demo info -->
+                  <div class="row text-center mt-4">
+                    <div class="col-6 border-right">
+                      <div class="h4 font-weight-bold mb-0">48%</div><span class="small text-gray">Last week</span>
+                    </div>
+                    <div class="col-6">
+                      <div class="h4 font-weight-bold mb-0">45%</div><span class="small text-gray">Last month</span>
+                    </div>
+                  </div>
+                  <!-- END -->
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 animate-box">
+                <div class="progress-wrap ftco-animate">
+                  <h3>Html5</h3>
+                  <div class="progress">
+                    <div class="progress-bar color-1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                      <span>80%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 animate-box">
+                <div class="progress-wrap ftco-animate">
+                  <h3>CSS</h3>
+                  <div class="progress">
+                    <div class="progress-bar color-2" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" style="width:83%">
+                      <span>83%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 animate-box">
+                <div class="progress-wrap ftco-animate">
+                  <h3>Angular</h3>
+                  <div class="progress">
+                    <div class="progress-bar color-3" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width:86%">
+                      <span>86%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 animate-box">
+                <div class="progress-wrap ftco-animate">
+                  <h3>Spring Boot</h3>
+                  <div class="progress">
+                    <div class="progress-bar color-4" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width:88%">
+                      <span>88%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 animate-box">
+                <div class="progress-wrap ftco-animate">
+                  <h3>JSP</h3>
+                  <div class="progress">
+                    <div class="progress-bar color-5" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" style="width:76%">
+                      <span>76%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 animate-box">
+                <div class="progress-wrap ftco-animate">
+                  <h3>Servlet</h3>
+                  <div class="progress">
+                    <div class="progress-bar color-6" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width:78%">
+                      <span>78%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 animate-box">
+                <div class="progress-wrap ftco-animate">
+                  <h3>JDBC</h3>
+                  <div class="progress">
+                    <div class="progress-bar color-6" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width:82%">
+                      <span>82%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 animate-box">
+                <div class="progress-wrap ftco-animate">
+                  <h3>Hibernate</h3>
+                  <div class="progress">
+                    <div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                      <span>80%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="page-4" class="page four">
+            <h2 class="heading">Awards</h2>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-ideas"></span>
+              </div>
+              <div class="text pl-3">
+                <span class="date">2019-2020</span>
+                <h2>Top 3 in Coding competition at zonal level</h2>
+                <span class="position">Rakshpal Bahadur College of Engineering and Technology</span>
+                <p>I got 3rd position in coding competition at zonal level organized by Dr. APJ Abdul kalam technical university.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section" id="profiles-section">
+    <div class="container-fluid px-md-5">
+      <div class="row justify-content-center py-5 mt-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <!-- <h1 class="big big-2">Services</h1> -->
+          <h2 class="mb-4">Profiles</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="https://leetcode.com/yasharajput0508/" class="services-1 shadow" target="_blank">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" viewBox="0 0 24 24"><path fill="currentColor" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104a5.35 5.35 0 0 0-.125.513a5.527 5.527 0 0 0 .062 2.362a5.83 5.83 0 0 0 .349 1.017a5.938 5.938 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523a2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"></path></svg>
+            </span>
+            <div class="desc">
+              <h3 class="mb-5">LeetCode</h3>
+              <p>I have completed 500+ questions and given 10+ Contest.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="https://www.codechef.com/users/yash027" class="services-1 shadow" target="_blank">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" viewBox="0 0 24 24"><path fill="currentColor" d="M11.257.004c-.37.01-.735.04-1.1.095c-.54.054-1.08.325-1.675.595c-.757.324-1.515.649-2.218.703c-1.19.378-1.568.919-1.892 1.351c0 .054-.054.108-.054.108c-.433.865-.487 1.73-.325 2.595c.162.541.378 1.029.54 1.515c.38 1.028.758 2 .92 3.136c.163.325.324.757.432 1.19c.27.865.542 1.838 1.353 2.595l.006-.003c.017.019.03.04.048.057l.021-.01l-.02-.584c.648-.974 1.566-1.623 2.864-1.893c.52-.11 1.081-.15 1.663-.128a8.773 8.773 0 0 1 1.798.236c1.46.378 2.595 1.136 2.65 1.785c.027.354.04.695.032 1.036c0 .064-.004.128-.007.193l.136.068a.639.639 0 0 0 .206-.19l.003-.003l.006-.008c.04-.054.075-.124.11-.194c.02-.037.038-.086.056-.129c.205-.462.362-1.153.538-1.963c.054-.27.11-.487.163-.703c.433-.973 1.027-1.838 1.622-2.65c.973-1.35 1.892-2.595 1.784-4.055c-1.784-3.461-4.272-4.002-5.57-4.272c-.216-.054-.323-.054-.485-.108c-1.338-.244-2.494-.396-3.605-.365zM16.3 14.383a9.86 9.86 0 0 0-.032-.983c-.054-.703-1.19-1.46-2.704-1.838a9.536 9.536 0 0 0-1.744-.236a6.761 6.761 0 0 0-1.555.128c-1.244.27-2.216.92-2.811 1.892l.051 1.431c.667-.355 1.733-.874 3.14-1c.065-.005.136-.005.204-.009c.117-.013.266-.044.444-.044c1.607 0 3.268.534 4.877 1.648c.039-.274.06-.549.07-.823l.045.023c.002-.063.014-.127.015-.19zM11.256.058c.124-.004.254.01.379.011c-.23-.002-.459.003-.687.016c.103-.006.205-.024.308-.027zm.498.015zM10.44.13c-.076.009-.153.013-.229.024c-.817.117-1.774.701-2.75 1.045c.355-.132.714-.296 1.075-.45c.54-.27 1.135-.541 1.621-.595c.094-.014.189-.013.283-.024zm-.229.24c.162 0 .379 0 .541.054a.995.995 0 0 0-.37-.014a1.174 1.174 0 0 1 .316.068c.58 1-.426 5.279-.679 8.149a57.37 57.37 0 0 0 .463 2.72c-.703-1.784-1.406-4.921-1.515-7.354c-.054-.973.001-1.839.218-2.487C9.4.855 9.725.423 10.21.369zm3.136.27c-.81 2.11-.918 6.11-.972 7.354c-.054.54 0 1.73.054 2.595c0 .216.054.432.054.649c0-.217-.054-.379-.054-.595c-.433-3.244-.974-7.136.918-10.002zm3.352.379c-.27 2.162-1.405 3.19-1.783 5.3c-.108 1.676-.325 3.622-.379 5.298c-.054-1.676 0-3.46.27-5.245c.27-1.838.865-3.677 1.892-5.353zM6.32 1.45zm.21.197a.856.856 0 0 1 .6.236l-.014-.007c.133.092.266.209.393.384c-.204.968.255 3.032.04 4.67c.076 1.548.071 3.18.849 4.459c-.98-1.51-1.176-3.438-1.322-5.236c-.113-1.09-.204-2.097-.464-2.903c-.144-.305-.269-.575-.384-.822c-.024-.037-.044-.079-.07-.114a.582.582 0 0 1-.162-.377c0-.054.053-.162.108-.162c.054-.054.161-.056.215-.11a1.013 1.013 0 0 1 .21-.018zm-1.347.613c-.06.02-.092.041-.14.061c.177-.034.362.034.52.318c-.188.892.436 3.369.428 5.104c.313 1.848.55 3.85 1.572 5.115c-1.19-1.351-1.676-3.73-2.054-5.731c-.325-1.568-.596-2.92-1.136-3.352c-.054-.108-.108-.163-.108-.271c0-.162 0-.379.108-.595c-.277.634-.405 1.267-.37 1.901a3.844 3.844 0 0 1 .37-1.901c0-.054.054-.054.054-.108c.012-.016.031-.035.044-.051a.878.878 0 0 1 .226-.257c.055-.061.096-.12.159-.182c-.053.056-.088.11-.134.165c.027-.018.052-.037.084-.052a.49.49 0 0 1 .377-.164zm-.377.164c-.004.007-.008.01-.012.018l.037-.03l-.025.012zm14.76 1.134l-.005.015c.038-.005.075-.017.113-.015c-.037-.002-.076.01-.115.02c-.863 2.642-1.887 5.284-2.911 7.926a.018.018 0 0 1-.002.003c-.087.465-.234.884-.54 1.19c.433-.487.486-1.191.54-2.056c.054-.811.054-1.676.487-2.542c0-.053.001-.105.053-.159l.001-.002c.097-.353.202-.689.317-1.018c.418-1.29 1.14-3.166 2.013-3.34c.016-.006.034-.019.05-.022zM8.374 16.21l-.324.108c.162.217.27.38.378.433a.784.784 0 0 0 .379.108c.054 0 .161 0 .215-.054l.812-.27c.054 0 .108-.054.162-.054c.108 0 .162 0 .27.054l.271.27l.27-.054c-.108-.162-.27-.323-.378-.377c-.108-.054-.217-.11-.379-.11h-.108l-.866.325h-.161c-.109 0-.216 0-.27-.054c-.054-.054-.163-.162-.271-.325zm-2.596.541c-.27.162-.649.433-1.19.649c-.54.216-.973.433-1.19.649c-.215.216-.323.432-.323.649c0 .108.054.163.162.217c.054.054.163.054.217.108a27.9 27.9 0 0 1 2.216 1.08c.109.054.217.163.272.217c.054.054.107.054.161.054c.109 0 .27-.053.378-.162c.108-.108.163-.217.163-.325c0-.108-.055-.161-.163-.215c0 0-.433-.217-1.19-.541a11.967 11.967 0 0 1-1.188-.595c.162-.27.486-.487.973-.703c.54-.216.92-.433 1.081-.595c.054-.054.054-.108.054-.162a.412.412 0 0 0-.108-.217a.415.415 0 0 0-.27-.108zm11.247 0a.408.408 0 0 0-.216.108c-.054.108-.109.163-.109.217v.054c.162.162.38.27.704.378c.27.054.54.163.811.217c.324.108.54.27.649.486v.055c0 .054-.109.162-.325.27c-.108.054-.325.217-.595.433c-.27.162-.433.323-.595.377c-.216.109-.378.217-.432.326c-.054.054-.054.107-.054.161c0 .108.054.108.108.216s.162.11.216.11c.054 0 .108-.056.162-.056c.27-.162.65-.378 1.082-.757c.486-.378.865-.648 1.082-.81c.216-.108.323-.217.323-.38c0-.053 0-.161-.108-.215c-.378-.433-.918-.702-1.567-.919c-.108-.054-.27-.109-.595-.163c-.162-.054-.325-.108-.433-.108zm-2.974.81c-.27 0-.487.056-.649.218c-.216.162-.27.432-.216.757c0 .27.108.486.27.703c.162.216.379.325.595.325c.162 0 .27-.056.433-.11c.27-.162.379-.432.379-.918c0-.379-.109-.649-.271-.81a.915.915 0 0 0-.541-.164zm-4.488.055c-.27 0-.486.055-.648.217c-.217.162-.27.432-.216.757c0 .27.107.486.27.702s.378.326.594.326c.163 0 .271-.056.433-.11c.27-.162.378-.432.378-.918c0-.433-.108-.703-.27-.81a.915.915 0 0 0-.54-.164zm0 .65c.163 0 .271.108.271.27c0 .162-.163.27-.27.27c-.163 0-.27-.108-.27-.27s.107-.27.27-.27zm4.38.054c.162 0 .271.107.271.27c0 .108-.109.27-.27.27c-.163 0-.27-.108-.27-.27c0-.163.107-.27.27-.27zm-2.703 2.108l.162.324a.947.947 0 0 0 .216.271c.054.054.163.162.27.162h.109c.108 0 .161 0 .215-.054c.054-.054.164-.054.218-.108l.161-.162c.054-.054.108-.109.108-.163c.054-.054.054-.108.108-.162c0-.054.054-.108.054-.108c-.054.108-.162.216-.216.324c-.108.054-.161.163-.27.163c-.107.054-.216.054-.324.054s-.216 0-.27-.054c-.108 0-.163-.054-.217-.108l-.162-.163c-.054-.054-.108-.162-.162-.216zm-.866 1.028c-1.136 0-1.838 1.514-3.46.162c-.432 2.65 2.758 2.866 4.11 1.73c.92-.81.648-1.946-.65-1.892zm2.866 0c-1.297-.054-1.568 1.082-.648 1.893c1.351 1.135 4.54.918 4.108-1.731c-1.622 1.352-2.27-.162-3.46-.162z"></path></svg>
+            </span>
+            <div class="desc">
+              <h3 class="mb-5">CodeChef</h3>
+              <p>I have completed 300+ questions and given 20+ Contest. My Highest Rating is 1649.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="https://auth.geeksforgeeks.org/user/yasharajput0508/practice" class="services-1 shadow" target="_blank">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" viewBox="0 0 24 24"><path fill="currentColor" d="M21.45 14.315c-.143.28-.334.532-.565.745a3.691 3.691 0 0 1-1.104.695a4.51 4.51 0 0 1-3.116-.016a3.79 3.79 0 0 1-2.135-2.078a3.571 3.571 0 0 1-.13-.353h7.418a4.26 4.26 0 0 1-.368 1.008zm-11.99-.654a3.793 3.793 0 0 1-2.134 2.078a4.51 4.51 0 0 1-3.117.016a3.7 3.7 0 0 1-1.104-.695a2.652 2.652 0 0 1-.564-.745a4.221 4.221 0 0 1-.368-1.006H9.59c-.038.12-.08.238-.13.352zm14.501-1.758a3.849 3.849 0 0 0-.082-.475l-9.634-.008a3.932 3.932 0 0 1 1.143-2.348c.363-.35.79-.625 1.26-.809a3.97 3.97 0 0 1 4.484.957l1.521-1.49a5.7 5.7 0 0 0-1.922-1.357a6.283 6.283 0 0 0-2.544-.49a6.35 6.35 0 0 0-2.405.457a6.007 6.007 0 0 0-1.963 1.276a6.142 6.142 0 0 0-1.325 1.94a5.862 5.862 0 0 0-.466 1.864h-.063a5.857 5.857 0 0 0-.467-1.865a6.13 6.13 0 0 0-1.325-1.939A6 6 0 0 0 8.21 6.34a6.698 6.698 0 0 0-4.949.031A5.708 5.708 0 0 0 1.34 7.73l1.52 1.49a4.166 4.166 0 0 1 4.484-.958c.47.184.898.46 1.26.81c.368.36.66.792.859 1.268c.146.344.242.708.285 1.08l-9.635.008A4.714 4.714 0 0 0 0 12.457a6.493 6.493 0 0 0 .345 2.127a4.927 4.927 0 0 0 1.08 1.783c.528.56 1.17 1 1.88 1.293a6.454 6.454 0 0 0 2.504.457c.824.005 1.64-.15 2.404-.457a5.986 5.986 0 0 0 1.964-1.277a6.116 6.116 0 0 0 1.686-3.076h.273a6.13 6.13 0 0 0 1.686 3.077a5.99 5.99 0 0 0 1.964 1.276a6.345 6.345 0 0 0 2.405.457a6.45 6.45 0 0 0 2.502-.457a5.42 5.42 0 0 0 1.882-1.293a4.928 4.928 0 0 0 1.08-1.783A6.52 6.52 0 0 0 24 12.457a4.757 4.757 0 0 0-.039-.554z"></path></svg>
+            </span>
+            <div class="desc">
+              <h3 class="mb-5">GeeksofGeeks</h3>
+              <p>I have complete 250+ questions and coding score is 862.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="https://www.linkedin.com/in/yash-rajput-515408214/" class="services-1 shadow" target="_blank">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"></path></svg>
+            </span>
+            <div class="desc">
+              <h3 class="mb-5">LinkedIn</h3>
+              <p>It is my social media profile where I manage my professional information.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="https://github.com/yashrajput0508" class="services-1 shadow" target="_blank">
+            <span class="icon">
+              &lt;<svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"></path></svg>
+            </span>
+            <div class="desc">
+              <h3 class="mb-5">Github</h3>
+              <p>It is my github account where all my projects are hosted.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ftco-section ftco-project" id="certificate-section">
+    <div class="container-fluid px-md-0">
+      <div class="row no-gutters justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h2 class="mb-4">Our Certificate</h2>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(./assets/certificate/gitcertificate.jpg);">
+            <div class="overlay"></div>
+            <div class="text text-center p-4">
+              <h3><a href="https://www.coursera.org/account/accomplishments/certificate/WLGD5PUBNSSJ" target="_blank">Version Control with Git</a></h3>
+              <span>Atlassian University</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(./assets/certificate/advanced_data_science.jpg);">
+            <div class="overlay"></div>
+            <div class="text text-center p-4">
+              <h3><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/KLUUQBQ2L6FT" target="_blank">Advanced Data Science Specialization</a></h3>
+              <span>Coursera</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(./assets/certificate/data_analysis.jpg);">
+            <div class="overlay"></div>
+            <div class="text text-center p-4">
+              <h3><a href="https://www.coursera.org/account/accomplishments/certificate/SA53CVPRUVVE" target="_blank">Data Analysis with Python</a></h3>
+              <span>Coursera</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(./assets/certificate/python_ai.jpg);">
+            <div class="overlay"></div>
+            <div class="text text-center p-4">
+              <h3><a href="https://www.coursera.org/account/accomplishments/certificate/Y4A6JJFA7XWE" target="_blank">Python For Data Science, AI &amp; Development</a></h3>
+              <span>Coursera</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(./assets/certificate/problem_solving.jpg);">
+            <div class="overlay"></div>
+            <div class="text text-center p-4">
+              <h3><a href="https://www.hackerrank.com/certificates/d0a4a6cdf4a1" target="_blank">Problem Solving</a></h3>
+              <span>Hackerrank</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(./assets/certificate/sql.jpg);">
+            <div class="overlay"></div>
+            <div class="text text-center p-4">
+              <h3><a href="https://courses.cognitiveclass.ai/certificates/544857d1aa634ffa8ac9f595afc5d40f" target="_blank">Sql and Relational Database</a></h3>
+              <span>IBM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    <div class="container-fluid px-md-5">
+      <div class="row d-md-flex align-items-center">
+        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 shadow">
+            <div class="text">
+              <strong class="number" data-number="1000">0</strong>
+              <span>Problems Solved</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 shadow">
+            <div class="text">
+              <strong class="number" data-number="20">0</strong>
+              <span>Complete Projects</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 shadow">
+            <div class="text">
+              <strong class="number" data-number="25">0</strong>
+              <span>Coding Contest Attempted</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 shadow">
+            <div class="text">
+              <strong class="number" data-number="200">0</strong>
+              <span>Cups of coffee</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ftco-section" id="project-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h2 class="mb-4">Our Projects</h2>
+        </div>
+      </div>
+      <div class="row d-flex">
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a href="#" class="block-20" style="background-image: url('./assets/images/image_1.jpg');">
+            </a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading"><a href="#">Product Catlog</a></h3>
+              <div class="d-flex align-items-center mb-3 meta">
+                <p class="mb-0">
+                  <span class="mr-2">Dec 2022 - Jan 2023</span>
+                  <a href="#" class="mr-2">Open Link</a>
+                </p>
+              </div>
+              <p>In this project user can buy the product. The project front-end developed by Angular and back-end developed by Java(Spring Boot). This project is secure by Spring Security and API is protected . The user information is saved securely in Mysql Database.The user information is byCrypted and stored in database.
+              </p>
+              <p>Front-end Tools:- Html, CSS, TypeScript, Angular, Guards, Interceptors etc.</p>
+              <p>Back-end Tools:- Java , Spring Boot, Spring Security, JPA, RestApi etc.</p>
+              <p>Database :- Mysql</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a href="#" class="block-20" style="background-image: url('./assets/project/chatbot.jpg');">
+            </a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading"><a href="#">Virtual Assistant</a></h3>
+              <div class="d-flex align-items-center mb-3 meta">
+                <p class="mb-0">
+                  <span class="mr-2">April 2021 - June 2021</span>
+                  <a href="https://github.com/yashrajput0508/Jarivs-2.0" class="mr-2" target="_blank">Open Link</a>
+                </p>
+              </div>
+              <p>It is the virtual assistant used for operating our machine using our voice.
+                It can send messages in email, whatspp and it can open or close any software in our system. It can answer query and give satisfication to user.. Program and Packges used:- Python, Deep learning models, Speechrecognition,
+                tensorflow, SQL, PyQt5 Framework etc</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry">
+            <a href="#" class="block-20" style="background-image: url('./assets/project/game.jpg');">
+            </a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading"><a href="#">Android Game(Mission Ninja)</a></h3>
+              <div class="d-flex align-items-center mb-3 meta">
+                <p class="mb-0">
+                  <span class="mr-2">Feb 2020 - Jul 2020</span>
+                  <a href="https://play.google.com/store/apps/details?id=com.YashRajput.MissionNinja" class="mr-2" target="_blank">Open Link</a>
+                </p>
+              </div>
+              <p>It is the 2D android game with full of adventure and action. In this game consisting 20 levels in which 4 level are boss level. Every level is harder than previous level. 
+                This game is created using Unity engine and C# programming.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-hireme img" style="background-image: url(./assets/images/bg_1.jpg)">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7 ftco-animate text-center">
+          <h2>I'm <span>Available</span> for Job</h2>
+          <p>To excel in my field through hard work, perseverance, skills, research and to serve my parents and nation with the best of my abilities</p>
+          <p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Contact</h1>
+          <h2 class="mb-4">Contact Me</h2>
+        </div>
+      </div>
+
+      <div class="row d-flex contact-info mb-5">
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box text-center p-4 shadow">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-map-signs"></span>
+            </div>
+            <div>
+              <h3 class="mb-4">Address</h3>
+              <p>Ekta Nagar, Pilibhit</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box text-center p-4 shadow">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-phone2"></span>
+            </div>
+            <div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p><a href="tel://1234567920">+91-8941989294</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box text-center p-4 shadow">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-paper-plane"></span>
+            </div>
+            <div>
+              <h3 class="mb-4">Email Address</h3>
+              <p><a href="mailto:yasharajput0508@gmail.com">yasharajput0508@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box text-center p-4 shadow">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"></path></svg>
+            </div>
+            <div>
+              <h3 class="mb-4">Social Media</h3>
+              <p><a href="https://www.linkedin.com/in/yash-rajput-515408214/" target="_blank">LinkedIn</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-gutters block-9">
+        <div class="col-md-12 order-md-last d-flex">
+          <form action="#" class="bg-light p-4 p-md-5 contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+            </div>
+          </form>
+
+        </div>
+
+        <!-- <div class="col-md-6 d-flex">
+          <div class="img" style="background-image: url(./assets/images/about.jpg);"></div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">About</h2>
+            <p>My name is yash and I'm Associate Engineer at Nagarro.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <li class="ftco-animate"><a href="https://www.linkedin.com/in/yash-rajput-515408214/" target="_blank"><span class="icon-linkedin"></span></a></li>
+              <li class="ftco-animate"><a href="https://github.com/yashrajput0508" target="_blank"><span class="icon-github"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.instagram.com/yasharajput0508/" target="_blank"><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-4">
+            <h2 class="ftco-heading-2">Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+              <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+              <li><a href="#resume-section"><span class="icon-long-arrow-right mr-2"></span>Resume</a></li>
+              <li><a href="#profiles-section"><span class="icon-long-arrow-right mr-2"></span>Profiles</a></li>
+              <li><a href="#certificate-section"><span class="icon-long-arrow-right mr-2"></span>Certificate</a></li>
+              <li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+              <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">Ekta Nagar, Pilibhit</span></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91-8941989294</span></a></li>
+                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">yasharajput0508gmail.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>This Portfolio Created By Yash Rajput
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"></circle></svg></div>
+
+  <app-root></app-root>
+<script src="runtime.4780622838e52590.js" type="module"></script><script src="polyfills.c858c62b609fd8a4.js" type="module"></script><script src="scripts.b733c26ea1138512.js" defer></script><script src="main.6b60974a08592aec.js" type="module"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/jquery.easing.1.3.js"></script>
+<script src="./assets/js/jquery.waypoints.min.js"></script>
+<script src="./assets/js/jquery.stellar.min.js"></script>
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/jquery.magnific-popup.min.js"></script>
+<script src="./assets/js/aos.js"></script>
+<script src="./assets/js/jquery.animateNumber.min.js"></script>
+<script src="./assets/js/scrollax.min.js"></script>
+
+</body></html>
